@@ -1,5 +1,3 @@
-# Estudar:
-
 ## HTML
 
  - Doctype
