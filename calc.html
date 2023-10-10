@@ -33,31 +33,19 @@
     <div id="sidebar-left"></div>
     <div id="content">
 
-      <h1>Produtos</h1>
+      <h1>Calculadora</h1>
 
-      <div id="container">
+      <label for="v1">V1:</label>
+      <input type="text" id="v1"><br>
+      <label for="v2">V2:</label>
+      <input type="text" id="v2"><br>
 
-      </div>
+      <button onclick="sum()">+</button>
+      <button onclick="sub()">-</button>
+      <button onclick="divi()">*</button>
+      <button onclick="mult()">/</button>
 
-      <div class="card horizontal">
-        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5006046-enviar-presente-cartao-referencia-codigo-conceito-ilustracao-plano-design-eps10-moderno-elemento-grafico-para-pagina-de-destino-vazio-estado-ui-infografico-icone-vetor.jpg" alt="Montanha" width="198px">
-        <div>
-          <h3>Nome</h3>
-          <p>R$XX,xx</p>
-        </div>
-      </div>      
-      <label for="nome-produto">Nome: </label>
-      <input type="text" id="nome-produto"><br>
-      <label for="preco-produto">Preço: R$</label>
-      <input type="text" id="preco-produto"><br>
-      <label for="imagem-produto">Link da Imagem: </label>
-      <input type="text" id="imagem-produto"><br>
-
-      <button onclick="adicionaProduto()">Adicionar</button><br>
-
-      <input type="text" id="txt-idade">
-      <button onclick="verificaIdade()">Verificar</button>
-      <p id="resultado"></p>
+      <p id="resultadoOperacao"></p>
 
     </div>
     <div id="sidebar-right"></div>
