@@ -4,9 +4,9 @@
     <title>Tech Coffee</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <script src="js/main.js"></script>
+    
   </head>
-  <body>
+  <body onload="loadProducts()">
      
   <header>
     <div class="wrapper">
@@ -20,8 +20,6 @@
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="video.html">Vídeos</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-
           <li><button onclick="window.location.href='/cadastro.html'">Cadastre-se</button></li>
         </ul>
         <img src="img/menu.svg" width="40px" height="40px" alt="Menu Icon">
@@ -30,42 +28,30 @@
   </header>
     
   <main class="wrapper">
-    <div id="sidebar-left"></div>
+    <div id="sidebar-left">Sidebar left</div>
     <div id="content">
-
-      <h1>Produtos</h1>
-
-      <div id="container">
-
-      </div>
-
-      <div class="card horizontal">
-        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/5006046-enviar-presente-cartao-referencia-codigo-conceito-ilustracao-plano-design-eps10-moderno-elemento-grafico-para-pagina-de-destino-vazio-estado-ui-infografico-icone-vetor.jpg" alt="Montanha" width="198px">
-        <div>
-          <h3>Nome</h3>
-          <p>R$XX,xx</p>
-        </div>
-      </div>      
-      <label for="nome-produto">Nome: </label>
-      <input type="text" id="nome-produto"><br>
-      <label for="preco-produto">Preço: R$</label>
-      <input type="text" id="preco-produto"><br>
-      <label for="imagem-produto">Link da Imagem: </label>
-      <input type="text" id="imagem-produto"><br>
-
-      <button onclick="adicionaProduto()">Adicionar</button><br>
-
-      <input type="text" id="txt-idade">
+      <h1>Produto</h1>
+      Idade: <input type="text" id="txt-idade">
       <button onclick="verificaIdade()">Verificar</button>
       <p id="resultado"></p>
 
+      <h3>Novo Produto</h3>
+
+      Nome: <input type="text" id="txt-name"><br>
+      Preço: <input type="text" id="txt-price"><br>
+      Foto: <input type="text" id="txt-photo"><br>
+      <button onclick="addProduct()">Add</button>
+      <div id="product-list">
+        
+      </div>
     </div>
-    <div id="sidebar-right"></div>
+    <div id="sidebar-right">Sidebar right</div>
   </main>
 
   <footer>
-      <span>Emilly @ 2023</span>
+      <span>Renan Cavichi @ 2023</span>
   </footer>
-
+  
   </body>
+  <script src="js/main.js"></script>
 </html>
