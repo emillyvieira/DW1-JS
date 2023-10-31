@@ -60,7 +60,13 @@ for(let i = 0; i < numeros.length; i++){
     console.log(numeros[i])
 }
 
-numeros.map((numero, index)=>{
+numeros.map((numero, index, lista)=>{
     console.log("Valor de i: ", index)
     console.log(numero)
+    console.log(lista)
 })
+
+numeros.push(87)
+numeros.push(98)
+
+console.log(numeros)

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Tech Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+  </head>
+  <body onload="loadProducts()">
+     
+  <header>
+    <div class="wrapper">
+      <a href="index.html" class="logotype">
+        <img src="img/coffee-icon.svg" alt="Tech Coffee Logo">
+        <h1>Tech Coffee</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="video.html">Vídeos</a></li>
+          <li><button onclick="window.location.href='/cadastro.html'">Cadastre-se</button></li>
+        </ul>
+        <img src="img/menu.svg" width="40px" height="40px" alt="Menu Icon">
+      </nav>
+    </div>
+  </header>
+    
+  <main class="wrapper">
+    <div id="sidebar-left">Sidebar left</div>
+    <div id="content">
+      <h1>Filmes</h1>
+      
+      <h3>Novo filme</h3>
+
+      Nome: <input type="text" id="movie-name"><br>
+      Categoria: <input type="text" id="movie-categ"><br>
+      Capa: <input type="text" id="movie-capa"><br>
+      <button onclick="addMovie()">Add</button>
+      <button onclick="showMovies()">Show All</button>
+      <button onclick="removeLMovie()">Remove Last</button>
+      <button onclick="removeNMovie()">Remove by Name</button>
+
+      <div id="movies-list">
+        
+      </div>
+    </div>
+    <div id="sidebar-right">Sidebar right</div>
+  </main>
+
+  <footer>
+      <span>Renan Cavichi @ 2023</span>
+  </footer>
+  
+  </body>
+  <script src="js/main.js"></script>
+</html>

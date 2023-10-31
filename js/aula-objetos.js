@@ -11,7 +11,7 @@ const pessoa = { // objeto
     nome: 'Renan Cavichi', //propriedade nome, valor 'Renan Cavichi'
     idade: 39,
     endereco: edereco,
-    ola: function () {return `Olá ${this}`}
+    ola: function () { return `Olá ${this}` }
 }
 
 const joao = pessoa
@@ -52,11 +52,11 @@ const produto = {
 // const peso = produto.peso
 // const marca = produto.marca
 
-const { marca, peso, nome } = produto 
+const { marca, peso, nome } = produto
 
 const produtinho = { marca, peso, nome, material: 'plastico' }
 
-const {decibeis} = produto.caracteristicas
+const { decibeis } = produto.caracteristicas
 
 console.log(produtinho)
 
@@ -73,7 +73,7 @@ const extraProduto = {
     "01 carga": 10
 }
 
-const newProd = {...extraProduto}
+const newProd = { ...extraProduto }
 
 console.log(extraProduto)
 
@@ -95,7 +95,7 @@ const endereco = {
     rua: "Rua Dez",
     numero: 0,
     cep: '12665-320'
-} 
+}
 
 const cartao = {
     nome: "RENAN C",
@@ -118,7 +118,7 @@ const errors = {
     fields: {
         name: [
             "Nome é requerido",
-            "Nome deve ter mais de 3 caracteres" 
+            "Nome deve ter mais de 3 caracteres"
         ],
         password: [
             "A senha deve ter um caractere minúsculo",
@@ -127,7 +127,9 @@ const errors = {
         ]
     }
 }
-if(errors?.fields?.name){
+if (errors?.fields?.name) {
     console.log(errors.fields.name[0])
 }
 
+const valor = parseInt("10")
+console.log(typeof valor)
